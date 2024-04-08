@@ -2,7 +2,7 @@
 #include "utils.h"
 int main()
 {
-    int arr[5] = {4, 6, 3, 7, 2};
+    int arr[5] = {5,4,3,2,1};
     int n = 5;
     int k,index;
 
@@ -14,7 +14,7 @@ int main()
     }    
     printf("\n");
 
-    //Smaller to Bigger
+    //Smaller to Bigger (Ascending Order)
     for (int i = 0; i < n-1; i++)
     {
         k = arr[i];
@@ -29,14 +29,14 @@ int main()
         swap(&arr[i],&arr[index]);
     }
 
-    printf("Smaller to Bigger: ");
+    printf("Smaller to Bigger (Ascending Order): ");
     for (int i = 0; i < n; i++)
     {
         printf("%d ",arr[i]);
     }    
     printf("\n");
 
-    //Bigger to Smaller
+    //Bigger to Smaller (Descending Order)
     for (int i = 0; i < n-1; i++)
     {
         k = arr[i];
@@ -51,7 +51,7 @@ int main()
         swap(&arr[i],&arr[index]);
     }
 
-    printf("Bigger to Smaller: ");
+    printf("Bigger to Smaller (Descending Order): ");
     for (int i = 0; i < n; i++)
     {
         printf("%d ",arr[i]);
