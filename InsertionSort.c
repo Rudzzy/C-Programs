@@ -6,7 +6,15 @@ int main()
     int arr[6] = { 5, 8, 3, 10, 1, 4};
     int n = 6;
 
-    //Smaller to Bigger
+    //Original Array
+    printf("Original Array: ");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    
+
+    //Smaller to Bigger (Ascending Order)
     for (int i = 0; i < n-1; i++)
     {
         for (int j = 0; j < n-1; j++)
@@ -18,13 +26,13 @@ int main()
         }
         
     }
-    printf("Smaller to Bigger : ");
+    printf("Smaller to Bigger  (Ascending Order): ");
     for (int i = 0; i < n; i++)
     {
         printf("%d, ",arr[i]);
     }printf("\n");
 
-    //Bigger to Smaller
+    //Bigger to Smaller (Decreasing Order)
     for (int i = 0; i < n-1; i++)
     {
         for (int j = 0; j < n-1; j++)
@@ -36,7 +44,7 @@ int main()
         }
         
     }
-    printf("Bigger to Smaller : ");
+    printf("Bigger to Smaller (Decreasing Order): ");
     for (int i = 0; i < n; i++)
     {
         printf("%d, ",arr[i]);
