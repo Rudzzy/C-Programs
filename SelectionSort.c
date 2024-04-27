@@ -1,5 +1,12 @@
 #include <stdio.h>
-#include "utils.h"
+
+void swap(int* a,int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int main()
 {
     int arr[5] = {5,4,3,2,1};
